@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 project(memory LANGUAGES CXX)
 
+SET(SLINT_FEATURE_BACKEND_QT=OFF)
+
 include(FetchContent)
 FetchContent_Declare(
     Slint

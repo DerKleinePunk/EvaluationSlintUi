@@ -1,0 +1,8 @@
+{
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceRoot}/build/${buildType}",
+    "cmake.configureSettings": { 
+        "SLINT_FEATURE_BACKEND_QT" : "OFF",
+        "CMAKE_DISABLE_FIND_PACKAGE_Qt5": 1
+    }
+}
