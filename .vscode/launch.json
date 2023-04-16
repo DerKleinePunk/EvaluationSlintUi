@@ -1,0 +1,15 @@
+{
+    "configurations": [
+    {
+        "name": "(Windows) Starten",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/bin/Windows/Debug/SlintUiTestApp.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}/bin/Windows/Debug/",
+        "environment": [],
+        "console": "externalTerminal"
+    }
+    ]
+}
