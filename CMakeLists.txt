@@ -19,6 +19,7 @@ SET (MAINFOLDER ${PROJECT_SOURCE_DIR})
 IF("${TARGET}" STREQUAL "")
    message(WARNING "TARGET not set please add -DTRAGET to command line Suported Target are Linux, Windows, PI (crosscompile)")
    SET(TARGET ${CMAKE_SYSTEM_NAME})
+   message(STATUS "TRAGET is set to ${TARGET}")
 ENDIF()
 
 SET (EXECUTABLE_OUTPUT_PATH "${MAINFOLDER}/bin/${TARGET}")
