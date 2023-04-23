@@ -13,7 +13,7 @@ endif()
 
 add_executable(${project_BIN} ${SRCS})
 
-target_link_libraries(${project_BIN} Slint::Slint)
+target_link_libraries(${project_BIN} PUBLIC Slint::Slint)
 slint_target_sources(${project_BIN} ../ui/mainWindow.slint)
 
 # On Windows, copy the Slint DLL next to the application binary so that it's found.

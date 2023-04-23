@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.21)
-project(memory LANGUAGES CXX)
+project(SlintUiTest LANGUAGES CXX)
 
-SET(SLINT_FEATURE_BACKEND_QT=OFF)
+SET(SLINT_FEATURE_BACKEND_QT OFF)
+
+#Set CMake variables to disable rpath
+
+set(CMAKE_SKIP_BUILD_RPATH TRUE)
+set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE) 
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH FALSE)
+SET(CMAKE_INSTALL_RPATH "$ORIGIN/../lib:$ORIGIN/")
 
 include(FetchContent)
 FetchContent_Declare(
@@ -13,6 +20,8 @@ FetchContent_Declare(
     SOURCE_SUBDIR api/cpp
 )
 FetchContent_MakeAvailable(Slint)
+
+SET_TARGET_PROPERTIES(Slint PROPERTIES NO_SONAME 1)
 
 SET (MAINFOLDER ${PROJECT_SOURCE_DIR})
 

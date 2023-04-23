@@ -12,3 +12,5 @@ Build Problem Update Cmake [see](https://github.com/slint-ui/slint/issues/2518)
 chrpath -r “\$\ORIGIN/libslint_cpp.so.1.0.0” <executable>
 
 chrpath -r “\$\ORIGIN/libslint_cpp.so” SlintUiTestApp.bin
+
+https://www.baeldung.com/linux/solve-shared-object-error
